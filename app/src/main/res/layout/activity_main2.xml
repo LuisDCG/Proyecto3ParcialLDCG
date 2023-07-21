@@ -60,6 +60,37 @@
             android:layout_marginRight="90dp"
             android:text="Ir" />
 
+
+        <EditText
+            android:id="@+id/editTextCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Extras"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextPrecioFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="Bebidas"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="Platillos"
+            android:inputType="text" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
