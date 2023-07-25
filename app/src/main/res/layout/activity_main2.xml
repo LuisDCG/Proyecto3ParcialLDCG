@@ -46,7 +46,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="90dp"
             android:layout_below="@+id/myListView"
-            android:text="Ir" />
+            android:text="Atras" />
 
 
     </LinearLayout>
