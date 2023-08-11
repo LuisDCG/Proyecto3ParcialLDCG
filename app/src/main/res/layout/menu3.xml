@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Desayuno A -->
+    <!-- Background -->
+
+    <!-- Menu Title -->
 
     <ImageView
         android:layout_width="match_parent"
@@ -18,57 +19,55 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/menuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="312dp"
-        android:layout_marginTop="152dp"
-        android:text=" Cena"
+        android:text="Cena"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Cena A -->
 
     <TextView
         android:id="@+id/itemA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Cena A"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintTop_toBottomOf="@id/menuTitle" />
 
     <ImageView
         android:id="@+id/imageA"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
         android:src="@drawable/ensala"
+        app:layout_constraintEnd_toStartOf="@id/bebidaA"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/itemA" />
+        app:layout_constraintTop_toBottomOf="@id/itemA" />
 
     <TextView
         android:id="@+id/bebidaA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Bebida: tomate de arbol"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toEndOf="@id/imageA"
-        app:layout_constraintTop_toBottomOf="@id/itemA" />
+        app:layout_constraintTop_toTopOf="@id/imageA" />
 
     <TextView
         android:id="@+id/comidaA"
@@ -77,60 +76,67 @@
         android:text="Comida: Ensalada"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toEndOf="@id/imageA"
         app:layout_constraintTop_toBottomOf="@id/bebidaA" />
-
-
 
     <TextView
         android:id="@+id/frutaA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="postre: mil hojas"
+        android:text="Postre: mil hojas"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toEndOf="@id/imageA"
         app:layout_constraintTop_toBottomOf="@id/comidaA" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoA"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaA"
+        app:layout_constraintTop_toTopOf="@id/frutaA"
+        tools:text="0" />
+
+    <!-- Cena B -->
 
     <TextView
         android:id="@+id/itemB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cena B"
+        android:layout_marginTop="32dp"
+        android:text="Cena B"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintTop_toBottomOf="@id/frutaA" />
 
     <ImageView
         android:id="@+id/imageB"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
         android:src="@drawable/pizaa"
+        app:layout_constraintEnd_toStartOf="@id/bebidaB"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/itemB" />
+        app:layout_constraintTop_toBottomOf="@id/itemB" />
 
     <TextView
         android:id="@+id/bebidaB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Bebida: malteada de chocolate"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toEndOf="@id/imageB"
-        app:layout_constraintTop_toBottomOf="@id/itemB" />
+        app:layout_constraintTop_toTopOf="@id/imageB" />
 
     <TextView
         android:id="@+id/comidaB"
@@ -139,63 +145,67 @@
         android:text="Comida: Pizza"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toEndOf="@id/imageB"
         app:layout_constraintTop_toBottomOf="@id/bebidaB" />
-
-    <!-- Desayuno C -->
 
     <TextView
         android:id="@+id/frutaB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Postre: fresas en crema "
+        android:text="Postre: fresas en crema"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toEndOf="@id/imageB"
         app:layout_constraintTop_toBottomOf="@id/comidaB" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaB"
+        app:layout_constraintTop_toTopOf="@id/frutaB"
+        tools:text="0" />
+
+    <!-- Cena C -->
 
     <TextView
         android:id="@+id/itemC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Cena C"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintTop_toBottomOf="@id/frutaB" />
 
     <ImageView
         android:id="@+id/imageC"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
         android:src="@drawable/omele"
+        app:layout_constraintEnd_toStartOf="@id/bebidaC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/itemC" />
-
-
+        app:layout_constraintTop_toBottomOf="@id/itemC" />
 
     <TextView
         android:id="@+id/bebidaC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Bebida:Cocoa caliente"
+        android:text="Bebida: Cocoa caliente"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toEndOf="@id/imageC"
-        app:layout_constraintTop_toBottomOf="@id/itemC" />
+        app:layout_constraintTop_toTopOf="@id/imageC" />
 
     <TextView
         android:id="@+id/comidaC"
@@ -204,8 +214,6 @@
         android:text="Comida: omelette"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toEndOf="@id/imageC"
         app:layout_constraintTop_toBottomOf="@id/bebidaC" />
 
@@ -216,47 +224,57 @@
         android:text="Postre: dulce de mora"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toEndOf="@id/imageC"
         app:layout_constraintTop_toBottomOf="@id/comidaC" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaC"
+        app:layout_constraintTop_toTopOf="@id/frutaC"
+        tools:text="0" />
+
+    <!-- Cena D -->
 
     <TextView
         android:id="@+id/itemD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cena D"
+        android:layout_marginTop="32dp"
+        android:text="Cena D"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintTop_toBottomOf="@id/frutaC" />
 
     <ImageView
         android:id="@+id/imageD"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
         android:src="@drawable/waffles"
+        app:layout_constraintEnd_toStartOf="@id/bebidaD"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/itemD" />
+        app:layout_constraintTop_toBottomOf="@id/itemD" />
 
     <TextView
         android:id="@+id/bebidaD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="malteada de fresa"
+        android:text="Bebida: malteada de fresa"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toEndOf="@id/imageD"
-        app:layout_constraintTop_toBottomOf="@id/itemD" />
+        app:layout_constraintTop_toTopOf="@id/imageD" />
 
     <TextView
         android:id="@+id/comidaD"
@@ -265,8 +283,6 @@
         android:text="Comida: waffles"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toEndOf="@id/imageD"
         app:layout_constraintTop_toBottomOf="@id/bebidaD" />
 
@@ -277,9 +293,61 @@
         android:text="Postre: fruta picada"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toEndOf="@id/imageD"
         app:layout_constraintTop_toBottomOf="@id/comidaD" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoD"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaD"
+        app:layout_constraintTop_toTopOf="@id/frutaD" />
+
+    <!-- Number of Table -->
+
+
+    <EditText
+        android:id="@+id/txtNumeroMesaAntojito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Numero de mesa"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButonPedirDesayuno"
+        app:layout_constraintTop_toBottomOf="@+id/CantidadAlmuerzoD"
+        tools:layout_editor_absoluteX="100dp"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/ButonPedirDesayuno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Pedir"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonantojo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonantojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Solicitar Antojio"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

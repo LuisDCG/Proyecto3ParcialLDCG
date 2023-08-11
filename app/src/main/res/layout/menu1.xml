@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ee29703780f7172631b1bab06e70c66f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_min="40dp" />
+
+    <EditText
+        android:id="@+id/DesayunoA"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintTop_toTopOf="@+id/comidaA"
+        app:layout_constraintWidth_min="40dp"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/DesayunoB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageB"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/DesayunoC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageC"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/DesayunoD"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageD"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="44dp"
+        android:text="Menú de Desayunos"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_min="40dp"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Desayuno A"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuTitle" />
+
+    <TextView
+        android:id="@+id/bebidaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Café"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/itemD" />
+
+    <TextView
+        android:id="@+id/frutaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:text="Uvas"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comidaC" />
+
+    <TextView
+        android:id="@+id/frutaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manzana"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/comidaB" />
+
+    <TextView
+        android:id="@+id/comidaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Croissant"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/bebidaB" />
+
+    <TextView
+        android:id="@+id/itemC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desayuno C"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/itemB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desayuno B"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <TextView
+        android:id="@+id/itemD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Desayuno D"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frutaC" />
+
+    <TextView
+        android:id="@+id/comidaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Croissant"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <TextView
+        android:id="@+id/bebidaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="124dp"
+        android:text="Jugo de Naranja"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemC" />
+
+    <ImageView
+        android:id="@+id/imageC"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/defr3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemC" />
+
+    <TextView
+        android:id="@+id/frutaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Papaya"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/comidaA" />
+
+    <TextView
+        android:id="@+id/frutaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piña"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/comidaD" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/des2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemB" />
+
+    <TextView
+        android:id="@+id/bebidaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Café con Leche"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/comidaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Pan"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/bebidaA" />
+
+    <TextView
+        android:id="@+id/bebidaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Chocolate"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/itemA" />
+
+    <TextView
+        android:id="@+id/comidaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="152dp"
+        android:text="Panqueques"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bebidaC" />
+
+    <ImageView
+        android:id="@+id/imageD"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="84dp"
+        android:src="@drawable/pina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageC"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/descarga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemA" />
+
+    <EditText
+        android:id="@+id/txtNumeroMesaAntojito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Numero de mesa"
+        android:inputType="number"
+        android:text="Numero de mesa"
+        app:layout_constraintEnd_toEndOf="@+id/ButonPedirDesayuno"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="@+id/btnantojodesayuno"
+        tools:ignore="MissingConstraints,TouchTargetSize"
+        tools:layout_editor_absoluteY="564dp" />
+
+    <Button
+        android:id="@+id/ButonPedirDesayuno"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="72dp"
+        android:text="Pedir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="225dp" />
+
+    <Button
+        android:id="@+id/btnantojodesayuno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="72dp"
+        android:text="Solicitar antojito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_min="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

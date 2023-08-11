@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/Fondo" />
+        android:src="@drawable/fond3o" />
+
+
 
     <Button
         android:id="@+id/btnBuy"
@@ -29,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/Fondo"
+        android:src="@drawable/fond3o"
         tools:ignore="DuplicateIds" />
 
     <LinearLayout
@@ -44,36 +46,26 @@
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="100dp"
-            android:src="@drawable/cafeImagen" />
+            />
 
-        <EditText
-            android:id="@+id/editTextUsername"
+        <Button
+            android:id="@+id/btnMenuCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="40dp"
-            android:hint="Usuario"
-            android:inputType="text" />
+            android:text="Cliente" />
 
-        <EditText
-            android:id="@+id/editTextPassword"
+        <Button
+            android:id="@+id/CambiarVistaMenuEmpleados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="40dp"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:text="Empleado" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="40dp"
-            android:text="Iniciar sesión" />
 
     </LinearLayout>
 

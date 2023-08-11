@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+
+    <!-- Menu Title -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="Menú de Almuerzos"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Almuerzo A -->
+
+    <TextView
+        android:id="@+id/itemA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Almuerzo A"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuTitle" />
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/arroz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemA" />
+
+    <TextView
+        android:id="@+id/bebidaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bebida: Jugo de lulo"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/itemA" />
+
+    <TextView
+        android:id="@+id/comidaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comida: Arroz con frijoles"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/bebidaA" />
+
+    <TextView
+        android:id="@+id/frutaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteina: lomo en salsa"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/comidaA" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoA"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaA"
+        app:layout_constraintTop_toTopOf="@id/frutaA" />
+
+    <!-- Almuerzo B -->
+
+    <TextView
+        android:id="@+id/itemB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almuerzo B"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frutaA" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/napolitana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemB" />
+
+    <TextView
+        android:id="@+id/bebidaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bebida: jugo de piña"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/itemB" />
+
+    <TextView
+        android:id="@+id/comidaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comida: pasta en salsa napolitana"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/bebidaB" />
+
+    <TextView
+        android:id="@+id/frutaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteina: Pechuga asada"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/comidaB" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaB"
+        app:layout_constraintTop_toTopOf="@id/frutaB" />
+
+    <!-- Almuerzo C -->
+
+    <TextView
+        android:id="@+id/itemC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almuerzo C"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frutaB" />
+
+    <ImageView
+        android:id="@+id/imageC"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/lass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemC" />
+
+    <TextView
+        android:id="@+id/bebidaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Bebida: Jugo de guanábana"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toEndOf="@id/imageC"
+        app:layout_constraintTop_toBottomOf="@id/itemC" />
+
+    <TextView
+        android:id="@+id/comidaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comida: Lasagna"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@id/imageC"
+        app:layout_constraintTop_toBottomOf="@id/bebidaC" />
+
+    <TextView
+        android:id="@+id/frutaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postre: Arroz con leche"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@id/imageC"
+        app:layout_constraintTop_toBottomOf="@id/comidaC" />
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/frutaC"
+        app:layout_constraintTop_toTopOf="@id/frutaC" />
+
+    <!-- Almuerzo D -->
+
+    <TextView
+        android:id="@+id/itemD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almuerzo D"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frutaC" />
+
+    <ImageView
+        android:id="@+id/imageD"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/perron"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemD" />
+
+    <TextView
+        android:id="@+id/bebidaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Bebida: Coca-Cola"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/itemD" />
+
+    <TextView
+        android:id="@+id/comidaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comida: Perro caliente"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/bebidaD" />
+
+    <TextView
+        android:id="@+id/frutaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acompañamiento: Papas a la francesa"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/comidaD" />
+
+    <!-- Número de mesa -->
+
+    <!-- Botón Pedir -->
+
+    <!-- Botón Solicitar Antojo -->
+
+    <EditText
+        android:id="@+id/CantidadAlmuerzoD"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/frutaD"
+        app:layout_constraintTop_toTopOf="@id/frutaD" />
+
+    <EditText
+        android:id="@+id/txtNumeroMesaAntojito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número de mesa"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="	#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frutaD"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+        android:id="@+id/ButonPedirDesayuno"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:text="Pedir"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNumeroMesaAntojito"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/btnantojitoalmuerzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar antojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButonPedirDesayuno" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
