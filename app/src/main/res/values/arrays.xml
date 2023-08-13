@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="employee_types">
+        <item>Mesero</item>
+        <item>Cocinero</item>
+    </string-array>
+</resources>
