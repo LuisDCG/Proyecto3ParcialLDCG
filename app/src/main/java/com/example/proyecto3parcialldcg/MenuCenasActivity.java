@@ -32,7 +32,7 @@ public class MenuCenasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu3);
 
-        // Initialize the views
+
         editTextNumber = findViewById(R.id.txtNumeroMesaAntojito);
         editTextA = findViewById(R.id.CantidadAlmuerzoA);
         editTextB = findViewById(R.id.CantidadAlmuerzoB);
@@ -46,18 +46,18 @@ public class MenuCenasActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Set the click listener for the submit button
+
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get the values entered by the user
+
                 String tableNumber = editTextNumber.getText().toString();
                 String cenaAQuantity = editTextA.getText().toString();
                 String cenaBQuantity = editTextB.getText().toString();
                 String cenaCQuantity = editTextC.getText().toString();
                 String cenaDQuantity = editTextD.getText().toString();
 
-                // Validate that each quantity is not 0 and insert non-zero quantities
+
                 int cenaA = Integer.parseInt(cenaAQuantity);
                 int cenaB = Integer.parseInt(cenaBQuantity);
                 int cenaC = Integer.parseInt(cenaCQuantity);
@@ -92,12 +92,12 @@ public class MenuCenasActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        // Manejar la respuesta del servidor si es necesario
+
                         Toast.makeText(MenuCenasActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
                     }
                 },
                 error -> {
-                    // Manejar errores de la solicitud si es necesario
+
                     Toast.makeText(MenuCenasActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
                 }) {
             @Override
