@@ -32,7 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
 
     <!-- Cena A -->
 
@@ -57,7 +58,9 @@
         android:src="@drawable/ensala"
         app:layout_constraintEnd_toStartOf="@id/bebidaA"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemA" />
+        app:layout_constraintTop_toBottomOf="@id/itemA"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
 
     <TextView
         android:id="@+id/bebidaA"
@@ -99,8 +102,8 @@
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/frutaA"
-        app:layout_constraintTop_toTopOf="@id/frutaA"
+        app:layout_constraintStart_toEndOf="@id/comidaA"
+        app:layout_constraintTop_toTopOf="@id/comidaA"
         tools:text="0" />
 
     <!-- Cena B -->
@@ -126,7 +129,9 @@
         android:src="@drawable/pizaa"
         app:layout_constraintEnd_toStartOf="@id/bebidaB"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemB" />
+        app:layout_constraintTop_toBottomOf="@id/itemB"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
 
     <TextView
         android:id="@+id/bebidaB"
@@ -168,8 +173,8 @@
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/frutaB"
-        app:layout_constraintTop_toTopOf="@id/frutaB"
+        app:layout_constraintStart_toEndOf="@id/comidaB"
+        app:layout_constraintTop_toTopOf="@id/comidaB"
         tools:text="0" />
 
     <!-- Cena C -->
@@ -195,7 +200,9 @@
         android:src="@drawable/omele"
         app:layout_constraintEnd_toStartOf="@id/bebidaC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemC" />
+        app:layout_constraintTop_toBottomOf="@id/itemC"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
 
     <TextView
         android:id="@+id/bebidaC"
@@ -264,7 +271,9 @@
         android:src="@drawable/waffles"
         app:layout_constraintEnd_toStartOf="@id/bebidaD"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemD" />
+        app:layout_constraintTop_toBottomOf="@id/itemD"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
 
     <TextView
         android:id="@+id/bebidaD"
