@@ -51,14 +51,14 @@ public class MenuComidasActivity extends AppCompatActivity {
         ButonPedirAlmuerzo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get the values entered by the user
+
                 String tableNumber = txtNumeroMesaAlmuerzo.getText().toString();
                 String cenaAQuantity = CantidadAlmuerzoA.getText().toString();
                 String cenaBQuantity = CantidadAlmuerzoB.getText().toString();
                 String cenaCQuantity = CantidadAlmuerzoC.getText().toString();
                 String cenaDQuantity = CantidadAlmuerzoD.getText().toString();
 
-                // Validate that each quantity is not 0 and insert non-zero quantities
+
                 int cenaA = Integer.parseInt(cenaAQuantity);
                 int cenaB = Integer.parseInt(cenaBQuantity);
                 int cenaC = Integer.parseInt(cenaCQuantity);
@@ -93,12 +93,12 @@ public class MenuComidasActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        // Manejar la respuesta del servidor si es necesario
+
                         Toast.makeText(MenuComidasActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
                     }
                 },
                 error -> {
-                    // Manejar errores de la solicitud si es necesario
+
                     Toast.makeText(MenuComidasActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
                 }) {
             @Override
