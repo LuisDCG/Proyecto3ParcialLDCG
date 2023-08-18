@@ -3,4 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="fondosActivitys">#CFFFFE</color>
+    <color name="colorfondo">#FFBC00</color>
+    <color name="botonpedir">#04EC58</color>
+    <color name="botonantojito">#04CBEC</color>
+    <color name="botoncambiarcontraseña">#9A9A9A</color>
+    <color name="botonlogincliente">#7997A8</color>
+    <color name="botonloginsesion">#EAA400</color>
 </resources>
