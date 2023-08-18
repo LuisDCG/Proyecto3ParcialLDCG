@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/registroimg"
     android:padding="16dp">
 
 
@@ -12,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:text="Bienvenidos al Delightful Brews Café"
+        android:text="Bienvenido a Sabor Mexicano"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
+        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcomeTextView" />
@@ -35,6 +38,8 @@
         android:ems="10"
         android:hint="Ingrese su nombre"
         android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#E4DADA"
         app:layout_constraintTop_toBottomOf="@id/usernameLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -44,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextText" />
@@ -55,6 +61,8 @@
         android:ems="10"
         android:hint="Ingrese su contraseña"
         android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#E4DADA"
         app:layout_constraintTop_toBottomOf="@id/passwordLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -66,17 +74,8 @@
         android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="Ingresar"
+        android:backgroundTint="@color/botoncambiarcontraseña"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
-
-    <Button
-        android:id="@+id/botonRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="Registrar"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

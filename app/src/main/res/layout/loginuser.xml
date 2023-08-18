@@ -6,25 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fondo0" />
-
-
-
-    <Button
-        android:id="@+id/btnBuy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Comprar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageBackground"
@@ -34,11 +15,23 @@
         android:src="@drawable/fondo0"
         tools:ignore="DuplicateIds" />
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#80000000"
         android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/logoiniciowhite"
+             />
 
 
         <TextView
@@ -49,7 +42,7 @@
             android:textSize="40sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="60dp"
             />
 
 
@@ -59,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
+            android:backgroundTint="@color/botonlogincliente"
             android:text="Cliente" />
 
         <Button
@@ -67,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:backgroundTint="@color/botonloginsesion"
             android:text="Iniciar Sesión" />
 
 

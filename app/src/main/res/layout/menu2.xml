@@ -1,38 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4">
 
     <!-- Background -->
 
     <!-- Menu Title -->
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fondo2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/menuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="96dp"
         android:layout_marginTop="44dp"
-        android:text="Menú de Almuerzos"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:text="Menú de Comidas"
+        android:textColor="#FFF"
+        android:textSize="24sp"
         android:textStyle="bold"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintWidth_min="40dp"
+        app:layout_constraintHeight_min="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Almuerzo A"
+        android:text="Comida A"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -99,27 +89,30 @@
         app:layout_constraintStart_toEndOf="@id/imageA"
         app:layout_constraintTop_toBottomOf="@id/comidaA" />
 
+    <!-- Almuerzo B -->
+
     <EditText
         android:id="@+id/CantidadAlmuerzoA"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number"
-        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toEndOf="@id/frutaA"
-        app:layout_constraintTop_toTopOf="@id/frutaA" />
-
-    <!-- Almuerzo B -->
+        app:layout_constraintTop_toTopOf="@id/bebidaA"
+        tools:text="0"/>
 
     <TextView
         android:id="@+id/itemB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Almuerzo B"
+        android:text="Comida B"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -175,6 +168,8 @@
         app:layout_constraintStart_toEndOf="@id/imageB"
         app:layout_constraintTop_toBottomOf="@id/comidaB" />
 
+    <!-- Almuerzo C -->
+
     <EditText
         android:id="@+id/CantidadAlmuerzoB"
         android:layout_width="80dp"
@@ -182,20 +177,20 @@
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number"
-        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toEndOf="@id/frutaB"
-        app:layout_constraintTop_toTopOf="@id/frutaB" />
-
-    <!-- Almuerzo C -->
+        app:layout_constraintTop_toTopOf="@id/bebidaB"
+        tools:text="0"/>
 
     <TextView
         android:id="@+id/itemC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Almuerzo C"
+        android:text="Comida C"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -251,6 +246,8 @@
         app:layout_constraintStart_toEndOf="@id/imageC"
         app:layout_constraintTop_toBottomOf="@id/comidaC" />
 
+    <!-- Almuerzo D -->
+
     <EditText
         android:id="@+id/CantidadAlmuerzoC"
         android:layout_width="80dp"
@@ -258,20 +255,20 @@
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number"
-        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toEndOf="@id/frutaC"
-        app:layout_constraintTop_toTopOf="@id/frutaC" />
-
-    <!-- Almuerzo D -->
+        app:layout_constraintTop_toTopOf="@id/bebidaC"
+        tools:text="0"/>
 
     <TextView
         android:id="@+id/itemD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Almuerzo D"
+        android:text="Comida D"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -307,7 +304,7 @@
         android:id="@+id/comidaD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comida: Perro caliente"
+        android:text="Comida: Hot-Dog"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -340,37 +337,41 @@
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number"
-        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toEndOf="@id/frutaD"
-        app:layout_constraintTop_toTopOf="@id/frutaD" />
+        app:layout_constraintTop_toTopOf="@id/bebidaD"
+        tools:text="0"/>
 
     <EditText
         android:id="@+id/txtNumeroMesaAntojito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Número de mesa"
         android:inputType="number"
-        android:text="0"
         android:textColor="	#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frutaD"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.236"
+        tools:text="Número de mesa"/>
 
     <Button
         android:id="@+id/ButonPedirDesayuno"
         android:layout_width="134dp"
         android:layout_height="49dp"
+        android:layout_marginTop="20dp"
         android:text="Pedir"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:backgroundTint="@color/botonpedir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -381,12 +382,13 @@
         android:id="@+id/btnantojitoalmuerzo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Solicitar antojo"
+        android:layout_marginTop="20dp"
+        android:text="Solicitar Antojito"
+        android:backgroundTint="@color/botonantojito"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ButonPedirDesayuno" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
