@@ -71,7 +71,7 @@ public class MeseroActivity extends AppCompatActivity {
 
 
     private void actualizarEstadoPedido(int idPedido) {
-        String url = "http://192.168.10.252:8080/androidPHPSQL/actualizarEstadoPedido.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/actualizarEstadoPedido.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> cargarPedidos(), // Recargamos los pedidos después de actualizar
                 error -> { /* Manejar el error */ }) {
@@ -87,7 +87,7 @@ public class MeseroActivity extends AppCompatActivity {
     }
 
     private void aceptarPedido(int idPedido, String nombreMesero) {
-        String url = "http://192.168.10.252:8080/androidPHPSQL/aceptarPedido.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/aceptarPedido.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> { /* No es necesario manejar respuesta :) Giño de Luis demetrio */ },
                 error -> { /* Manejar el error */ }) {
@@ -104,7 +104,7 @@ public class MeseroActivity extends AppCompatActivity {
     }
 
     private void cargarPedidos() {
-        String url = "http://192.168.10.252:8080/androidPHPSQL/listapedidos.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/listapedidos.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,

@@ -32,14 +32,14 @@ public class InicioActivity extends AppCompatActivity {
         setContentView(R.layout.inicio);
 
 
-        Button butonRegistrar = findViewById(R.id.botonRegistrar);
+        /*Button butonRegistrar = findViewById(R.id.botonRegistrar);
         butonRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(InicioActivity.this, RegistrarEmpleadosActivity.class);
                 startActivity(intent);
             }
-        });
+        }); */
 
         nameInput = findViewById(R.id.editTextText);
         passwordInput = findViewById(R.id.editTextTextPassword);
@@ -60,7 +60,7 @@ public class InicioActivity extends AppCompatActivity {
     }
     private void logearUsuario(String nombre, String contrasena) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.116.36:8080/androidPHPSQL/login_empleado.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/login_empleado.php";
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> {

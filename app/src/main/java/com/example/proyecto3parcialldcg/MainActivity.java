@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickBtnListener(View view){
-        String url = "http://192.168.10.252:8080/androidPHPSQL/insercion.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/insercion.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         StringRequest resultadoPost = new StringRequest(Request.Method.POST, url,

@@ -58,7 +58,7 @@ public class CambiarContraActivity extends AppCompatActivity {
 
     private void cambiarContraseñaEnBD(String oldPassword, String newPassword) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.10.252:8080/androidPHPSQL/cambiar_contrasena.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/cambiar_contrasena.php";
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {

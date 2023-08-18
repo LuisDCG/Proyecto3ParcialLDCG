@@ -87,7 +87,7 @@ public class MenuComidasActivity extends AppCompatActivity {
 
 
     private void insertData(final String tableNumber, final String nombrePedido, final String cantidad) {
-        String url = "http://192.168.10.252:8080/androidPHPSQL/agregar_pedido.php";
+        String url = "http://192.168.200.2:8080/androidPHPSQL/agregar_pedido.php";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
