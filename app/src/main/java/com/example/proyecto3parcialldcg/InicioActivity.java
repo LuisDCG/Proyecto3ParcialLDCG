@@ -60,7 +60,7 @@ public class InicioActivity extends AppCompatActivity {
     }
     private void logearUsuario(String nombre, String contrasena) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.200.2:8080/androidPHPSQL/login_empleado.php";
+        String url = "http://192.168.131.89:8080/androidPHPSQL/login_empleado.php";
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> {

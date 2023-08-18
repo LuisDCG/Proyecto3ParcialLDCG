@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 if (hourOfDay >= 8 && hourOfDay < 12) {
                     intent = new Intent(MainActivity.this, MenuDesayunosActivity.class);
                 } else if (hourOfDay >= 12 && hourOfDay < 18) {
-                    intent = new Intent(MainActivity.this, MenuDesayunosActivity.class);
+                    intent = new Intent(MainActivity.this, MenuComidasActivity.class);
                 } else if (hourOfDay >= 18 && hourOfDay < 23) {
                     intent = new Intent(MainActivity.this, MenuCenasActivity.class);
                 } else {
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickBtnListener(View view){
-        String url = "http://192.168.200.2:8080/androidPHPSQL/insercion.php";
+        String url = "http://192.168.131.89:8080/androidPHPSQL/insercion.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         StringRequest resultadoPost = new StringRequest(Request.Method.POST, url,
