@@ -45,7 +45,7 @@ public class CocineroActivity extends AppCompatActivity {
 
 
     private void cargarPedidosCocinero() {
-        String url = "http://192.168.200.2:8080/androidPHPSQL/obtenerPedidosCocinero.php";
+        String url = "http://192.168.131.89:8080/androidPHPSQL/obtenerPedidosCocinero.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
@@ -76,7 +76,7 @@ public class CocineroActivity extends AppCompatActivity {
     }
 
     private void procesarPedidoCocinero(int idPedido) {
-        String url = "http://192.168.200.2:8080/androidPHPSQL/procesarPedidoCocinero.php";
+        String url = "http://192.168.131.89:8080/androidPHPSQL/procesarPedidoCocinero.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> cargarPedidosCocinero(),
                 error -> { /* Manejar el error */ }) {
