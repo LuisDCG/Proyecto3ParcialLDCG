@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,10 +22,10 @@ import java.util.Map;
 public class MenuCenasActivity extends AppCompatActivity {
 
     private EditText editTextNumber;
-    private EditText editTextA;
-    private EditText editTextB;
-    private EditText editTextC;
-    private EditText editTextD;
+    private NumberPicker editTextA;
+    private NumberPicker editTextB;
+    private NumberPicker editTextC;
+    private NumberPicker editTextD;
     private Button buttonSubmit;
 
     @Override
@@ -40,6 +41,26 @@ public class MenuCenasActivity extends AppCompatActivity {
         editTextD = findViewById(R.id.CantidadAlmuerzoD);
         buttonSubmit = findViewById(R.id.ButonPedirDesayuno);
 
+        editTextA.setMinValue(0); // Valor mínimo
+        editTextA.setMaxValue(100); // Valor máximo
+        editTextA.setValue(0); // Valor inicial
+        editTextA.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+
+        editTextB.setMinValue(0); // Valor mínimo
+        editTextB.setMaxValue(100); // Valor máximo
+        editTextB.setValue(0); // Valor inicial
+        editTextB.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+
+        editTextC.setMinValue(0); // Valor mínimo
+        editTextC.setMaxValue(100); // Valor máximo
+        editTextC.setValue(0); // Valor inicial
+        editTextC.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+
+        editTextD.setMinValue(0); // Valor mínimo
+        editTextD.setMaxValue(100); // Valor máximo
+        editTextD.setValue(0); // Valor inicial
+        editTextD.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+
         Button botonAntojo = findViewById(R.id.botonantojo);
         botonAntojo.setOnClickListener(v -> {
             Intent intent = new Intent(MenuCenasActivity.this, MenuAntojosActivity.class);
@@ -52,31 +73,36 @@ public class MenuCenasActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String tableNumber = editTextNumber.getText().toString();
-                String cenaAQuantity = editTextA.getText().toString();
-                String cenaBQuantity = editTextB.getText().toString();
-                String cenaCQuantity = editTextC.getText().toString();
-                String cenaDQuantity = editTextD.getText().toString();
+                //String cenaAQuantity = editTextA.getText().toString();
 
+                //String cenaBQuantity = editTextB.getText().toString();
+                //String cenaCQuantity = editTextC.getText().toString();
+                //String cenaDQuantity = editTextD.getText().toString();
 
-                int cenaA = Integer.parseInt(cenaAQuantity);
-                int cenaB = Integer.parseInt(cenaBQuantity);
-                int cenaC = Integer.parseInt(cenaCQuantity);
-                int cenaD = Integer.parseInt(cenaDQuantity);
+                int cenaAQuantity = editTextA.getValue();
+                int cenaBQuantity = editTextA.getValue();
+                int cenaCQuantity = editTextA.getValue();
+                int cenaDQuantity = editTextA.getValue();
 
-                if (cenaA != 0) {
-                    insertData(tableNumber, "Cena A", cenaAQuantity);
+                //int cenaA = Integer.parseInt(cenaAQuantity);
+                //int cenaB = Integer.parseInt(cenaBQuantity);
+                //int cenaC = Integer.parseInt(cenaCQuantity);
+                //int cenaD = Integer.parseInt(cenaDQuantity);
+
+                if (cenaAQuantity != 0) {
+                    insertData(tableNumber, "Cena A", String.valueOf(cenaAQuantity));
                 }
 
-                if (cenaB != 0) {
-                    insertData(tableNumber, "Cena B", cenaBQuantity);
+                if (cenaBQuantity != 0) {
+                    insertData(tableNumber, "Cena B", String.valueOf(cenaBQuantity));
                 }
 
-                if (cenaC != 0) {
-                    insertData(tableNumber, "Cena C", cenaCQuantity);
+                if (cenaCQuantity != 0) {
+                    insertData(tableNumber, "Cena C", String.valueOf(cenaCQuantity));
                 }
 
-                if (cenaD != 0) {
-                    insertData(tableNumber, "Cena D", cenaDQuantity);
+                if (cenaDQuantity != 0) {
+                    insertData(tableNumber, "Cena D", String.valueOf(cenaDQuantity));
                 }
             }
         });
@@ -86,14 +112,21 @@ public class MenuCenasActivity extends AppCompatActivity {
     }
 
     private void insertData(final String tableNumber, final String nombrePedido, final String cantidad) {
-        String url = "http://192.168.131.89:8080/androidPHPSQL/agregar_pedido.php";
+        String url = "http://192.168.1.109:8080/androidPHPSQL/agregar_pedido.php";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
-                        Toast.makeText(MenuCenasActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuCenasActivity.this, "Pedido realizado!", Toast.LENGTH_SHORT).show();
+
+                        editTextA.setValue(editTextA.getMinValue());
+                        editTextB.setValue(editTextA.getMinValue());
+                        editTextC.setValue(editTextA.getMinValue());
+                        editTextD.setValue(editTextA.getMinValue());
+                        editTextNumber.setText("");
+
                     }
                 },
                 error -> {
