@@ -49,18 +49,17 @@
             app:layout_constraintEnd_toStartOf="@+id/txtAntojitoA"
             app:layout_constraintTop_toTopOf="@+id/image1" />
 
-        <EditText
+        <NumberPicker
             android:id="@+id/txtAntojitoA"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
-            android:hint="Cantidad"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             app:layout_constraintStart_toEndOf="@+id/item1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image1" />
+
 
         <!-- Antojo 2: Torta de Chocolate -->
         <ImageView
@@ -86,18 +85,17 @@
             app:layout_constraintEnd_toStartOf="@+id/txtAntojitoB"
             app:layout_constraintTop_toTopOf="@+id/image2" />
 
-        <EditText
+        <NumberPicker
             android:id="@+id/txtAntojitoB"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp"
-            android:hint="Cantidad"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             app:layout_constraintStart_toEndOf="@+id/item2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2" />
+
 
         <!-- Antojo 3: Flan de Vainilla -->
         <ImageView
@@ -123,18 +121,17 @@
             app:layout_constraintEnd_toStartOf="@+id/txtAntojitoC"
             app:layout_constraintTop_toTopOf="@+id/image3" />
 
-        <EditText
+        <NumberPicker
             android:id="@+id/txtAntojitoC"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp"
-            android:hint="Cantidad"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             app:layout_constraintStart_toEndOf="@+id/item3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image3" />
+
 
         <EditText
             android:id="@+id/txtNumeroMesaAntojito"
