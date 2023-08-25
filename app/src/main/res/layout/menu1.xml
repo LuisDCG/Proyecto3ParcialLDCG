@@ -89,24 +89,32 @@
         app:layout_constraintStart_toEndOf="@id/imageA"
         app:layout_constraintTop_toBottomOf="@id/comidaA" />
 
+    <TextView
+        android:id="@+id/costoDesayunoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 18"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/frutaA" />
+
     <!-- Almuerzo B -->
 
-    <EditText
-        android:id="@+id/DesayunoA"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
+    <NumberPicker
+        android:id="@+id/CantidadDesayunoA"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginEnd="1dp"
-        android:ems="10"
-        android:hint="Cantidad"
-        android:inputType="number"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toEndOf="@id/frutaA"
-        app:layout_constraintTop_toTopOf="@id/bebidaA"
-        tools:text="0"/>
+        app:layout_constraintTop_toTopOf="@id/bebidaA" />
+
 
     <TextView
         android:id="@+id/itemB"
@@ -168,23 +176,31 @@
         app:layout_constraintStart_toEndOf="@id/imageB"
         app:layout_constraintTop_toBottomOf="@id/comidaB" />
 
+    <TextView
+        android:id="@+id/costoDesayunoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 13"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/frutaB" />
+
     <!-- Almuerzo C -->
 
-    <EditText
-        android:id="@+id/DesayunoB"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Cantidad"
-        android:inputType="number"
+    <NumberPicker
+        android:id="@+id/CantidadDesayunoB"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toEndOf="@id/frutaB"
-        app:layout_constraintTop_toTopOf="@id/bebidaB"
-        tools:text="0"/>
+        app:layout_constraintTop_toTopOf="@id/bebidaB" />
+
 
     <TextView
         android:id="@+id/itemC"
@@ -246,23 +262,31 @@
         app:layout_constraintStart_toEndOf="@id/imageC"
         app:layout_constraintTop_toBottomOf="@id/comidaC" />
 
+    <TextView
+        android:id="@+id/costoDesayunoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 25"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@id/imageC"
+        app:layout_constraintTop_toBottomOf="@id/frutaC" />
+
     <!-- Almuerzo D -->
 
-    <EditText
-        android:id="@+id/DesayunoC"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Cantidad"
-        android:inputType="number"
+    <NumberPicker
+        android:id="@+id/CantidadDesayunoC"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toEndOf="@id/frutaC"
-        app:layout_constraintTop_toTopOf="@id/bebidaC"
-        tools:text="0"/>
+        app:layout_constraintTop_toTopOf="@id/bebidaC" />
+
 
     <TextView
         android:id="@+id/itemD"
@@ -324,27 +348,35 @@
         app:layout_constraintStart_toEndOf="@id/imageD"
         app:layout_constraintTop_toBottomOf="@id/comidaD" />
 
+    <TextView
+        android:id="@+id/costoDesayunoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 20"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/frutaD" />
+
     <!-- Número de mesa -->
 
     <!-- Botón Pedir -->
 
     <!-- Botón Solicitar Antojo -->
 
-    <EditText
-        android:id="@+id/DesayunoD"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Cantidad"
-        android:inputType="number"
+    <NumberPicker
+        android:id="@+id/CantidadDesayunoD"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.856"
         app:layout_constraintStart_toEndOf="@id/frutaD"
-        app:layout_constraintTop_toTopOf="@id/bebidaD"
-        tools:text="0" />
+        app:layout_constraintTop_toTopOf="@id/bebidaD" />
+
 
     <EditText
         android:id="@+id/txtNumeroMesaAntojito"
@@ -383,7 +415,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Solicitar Antojito"
+        android:text="Antojitos"
         android:backgroundTint="@color/botonantojito"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

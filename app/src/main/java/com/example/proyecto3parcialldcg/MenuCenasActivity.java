@@ -89,6 +89,8 @@ public class MenuCenasActivity extends AppCompatActivity {
                 //int cenaC = Integer.parseInt(cenaCQuantity);
                 //int cenaD = Integer.parseInt(cenaDQuantity);
 
+
+
                 if (cenaAQuantity != 0) {
                     insertData(tableNumber, "Cena A", String.valueOf(cenaAQuantity));
                 }
@@ -104,10 +106,40 @@ public class MenuCenasActivity extends AppCompatActivity {
                 if (cenaDQuantity != 0) {
                     insertData(tableNumber, "Cena D", String.valueOf(cenaDQuantity));
                 }
+
+
+
+                // Asignar valores a las variables quantity
+                int cenaAValue = 35;
+                int cenaBValue = 50;
+                int cenaCValue = 37;
+                int cenaDValue = 25;
+
+                // Multiplicar los valores obtenidos por los valores asignados
+                cenaAQuantity *= cenaAValue;
+                cenaBQuantity *= cenaBValue;
+                cenaCQuantity *= cenaCValue;
+                cenaDQuantity *= cenaDValue;
+
+                // Crear un arreglo para almacenar los valores
+                int[] quantityArray = {cenaAQuantity, cenaBQuantity, cenaCQuantity, cenaDQuantity};
+
+                // Realizar una multiplicación utilizando un bucle
+                int multiplicacionTotal = 0;
+                for (int quantity : quantityArray) {
+                    multiplicacionTotal += quantity;
+                }
+
+                // Mostrar el resultado en un Toast
+                String mensaje = "Total del Pedido: $" + multiplicacionTotal;
+                Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT).show();
+
+                if (multiplicacionTotal != 0) {
+                    insertData2(String.valueOf(multiplicacionTotal));
+                }
+
             }
         });
-
-
 
     }
 
@@ -139,6 +171,43 @@ public class MenuCenasActivity extends AppCompatActivity {
                 params.put("NombrePedido", nombrePedido);
                 params.put("cantidad", cantidad);
                 params.put("numeroMesa", tableNumber);
+                return params;
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+
+
+    private void insertData2(final String tableNumber2) {
+        String url = "http://192.168.1.109:8080/androidPHPSQL/agregar_total.php";
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        Toast.makeText(MenuCenasActivity.this, "¡TOTAL AGREGADO!", Toast.LENGTH_SHORT).show();
+
+                        /*
+                        CantidadCenaA.setValue(CantidadCenaA.getMinValue());
+                        CantidadCenaB.setValue(CantidadCenaB.getMinValue());
+                        CantidadCenaC.setValue(CantidadCenaC.getMinValue());
+                        CantidadCenaD.setValue(CantidadCenaD.getMinValue());
+                        editTextNumber.setText(""); */
+
+                    }
+                },
+                error -> {
+
+                    Toast.makeText(MenuCenasActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                }) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                params.put("total", tableNumber2);
                 return params;
             }
         };
