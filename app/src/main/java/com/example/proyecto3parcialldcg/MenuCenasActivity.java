@@ -22,10 +22,10 @@ import java.util.Map;
 public class MenuCenasActivity extends AppCompatActivity {
 
     private EditText editTextNumber;
-    private NumberPicker editTextA;
-    private NumberPicker editTextB;
-    private NumberPicker editTextC;
-    private NumberPicker editTextD;
+    private NumberPicker CantidadCenaA;
+    private NumberPicker CantidadCenaB;
+    private NumberPicker CantidadCenaC;
+    private NumberPicker CantidadCenaD;
     private Button buttonSubmit;
 
     @Override
@@ -35,31 +35,31 @@ public class MenuCenasActivity extends AppCompatActivity {
 
 
         editTextNumber = findViewById(R.id.txtNumeroMesaAntojito);
-        editTextA = findViewById(R.id.CantidadAlmuerzoA);
-        editTextB = findViewById(R.id.CantidadAlmuerzoB);
-        editTextC = findViewById(R.id.CantidadAlmuerzoC);
-        editTextD = findViewById(R.id.CantidadAlmuerzoD);
+        CantidadCenaA = findViewById(R.id.CantidadAlmuerzoA);
+        CantidadCenaB = findViewById(R.id.CantidadAlmuerzoB);
+        CantidadCenaC = findViewById(R.id.CantidadAlmuerzoC);
+        CantidadCenaD = findViewById(R.id.CantidadAlmuerzoD);
         buttonSubmit = findViewById(R.id.ButonPedirDesayuno);
 
-        editTextA.setMinValue(0); // Valor mínimo
-        editTextA.setMaxValue(100); // Valor máximo
-        editTextA.setValue(0); // Valor inicial
-        editTextA.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+        CantidadCenaA.setMinValue(0); // Valor mínimo
+        CantidadCenaA.setMaxValue(100); // Valor máximo
+        CantidadCenaA.setValue(0); // Valor inicial
+        CantidadCenaA.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
 
-        editTextB.setMinValue(0); // Valor mínimo
-        editTextB.setMaxValue(100); // Valor máximo
-        editTextB.setValue(0); // Valor inicial
-        editTextB.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+        CantidadCenaB.setMinValue(0); // Valor mínimo
+        CantidadCenaB.setMaxValue(100); // Valor máximo
+        CantidadCenaB.setValue(0); // Valor inicial
+        CantidadCenaB.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
 
-        editTextC.setMinValue(0); // Valor mínimo
-        editTextC.setMaxValue(100); // Valor máximo
-        editTextC.setValue(0); // Valor inicial
-        editTextC.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+        CantidadCenaC.setMinValue(0); // Valor mínimo
+        CantidadCenaC.setMaxValue(100); // Valor máximo
+        CantidadCenaC.setValue(0); // Valor inicial
+        CantidadCenaC.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
 
-        editTextD.setMinValue(0); // Valor mínimo
-        editTextD.setMaxValue(100); // Valor máximo
-        editTextD.setValue(0); // Valor inicial
-        editTextD.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
+        CantidadCenaD.setMinValue(0); // Valor mínimo
+        CantidadCenaD.setMaxValue(100); // Valor máximo
+        CantidadCenaD.setValue(0); // Valor inicial
+        CantidadCenaD.setWrapSelectorWheel(false); // Si deseas que se detenga al llegar al límite
 
         Button botonAntojo = findViewById(R.id.botonantojo);
         botonAntojo.setOnClickListener(v -> {
@@ -79,10 +79,10 @@ public class MenuCenasActivity extends AppCompatActivity {
                 //String cenaCQuantity = editTextC.getText().toString();
                 //String cenaDQuantity = editTextD.getText().toString();
 
-                int cenaAQuantity = editTextA.getValue();
-                int cenaBQuantity = editTextA.getValue();
-                int cenaCQuantity = editTextA.getValue();
-                int cenaDQuantity = editTextA.getValue();
+                int cenaAQuantity = CantidadCenaA.getValue();
+                int cenaBQuantity = CantidadCenaB.getValue();
+                int cenaCQuantity = CantidadCenaC.getValue();
+                int cenaDQuantity = CantidadCenaD.getValue();
 
                 //int cenaA = Integer.parseInt(cenaAQuantity);
                 //int cenaB = Integer.parseInt(cenaBQuantity);
@@ -121,10 +121,10 @@ public class MenuCenasActivity extends AppCompatActivity {
 
                         Toast.makeText(MenuCenasActivity.this, "¡Pedido realizado!", Toast.LENGTH_SHORT).show();
 
-                        editTextA.setValue(editTextA.getMinValue());
-                        editTextB.setValue(editTextB.getMinValue());
-                        editTextC.setValue(editTextC.getMinValue());
-                        editTextD.setValue(editTextD.getMinValue());
+                        CantidadCenaA.setValue(CantidadCenaA.getMinValue());
+                        CantidadCenaB.setValue(CantidadCenaB.getMinValue());
+                        CantidadCenaC.setValue(CantidadCenaC.getMinValue());
+                        CantidadCenaD.setValue(CantidadCenaD.getMinValue());
                         editTextNumber.setText("");
 
                     }

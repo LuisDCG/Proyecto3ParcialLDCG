@@ -139,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Número de mesa"
+            android:textAlignment="center"
             android:textColorHint="@color/white"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
