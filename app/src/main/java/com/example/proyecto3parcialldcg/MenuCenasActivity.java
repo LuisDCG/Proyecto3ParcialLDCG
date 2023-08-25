@@ -119,12 +119,12 @@ public class MenuCenasActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
-                        Toast.makeText(MenuCenasActivity.this, "Pedido realizado!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuCenasActivity.this, "¡Pedido realizado!", Toast.LENGTH_SHORT).show();
 
                         editTextA.setValue(editTextA.getMinValue());
-                        editTextB.setValue(editTextA.getMinValue());
-                        editTextC.setValue(editTextA.getMinValue());
-                        editTextD.setValue(editTextA.getMinValue());
+                        editTextB.setValue(editTextB.getMinValue());
+                        editTextC.setValue(editTextC.getMinValue());
+                        editTextD.setValue(editTextD.getMinValue());
                         editTextNumber.setText("");
 
                     }
