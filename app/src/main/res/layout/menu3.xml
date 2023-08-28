@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo3"
+        android:background="@drawable/fondo2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -95,6 +95,16 @@
         app:layout_constraintStart_toEndOf="@id/imageA"
         app:layout_constraintTop_toBottomOf="@id/comidaA" />
 
+    <TextView
+        android:id="@+id/costoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 35"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageA"
+        app:layout_constraintTop_toBottomOf="@id/frutaA" />
+
     <NumberPicker
         android:id="@+id/CantidadAlmuerzoA"
         android:layout_width="wrap_content"
@@ -163,6 +173,16 @@
         app:layout_constraintStart_toEndOf="@id/imageB"
         app:layout_constraintTop_toBottomOf="@id/comidaB" />
 
+    <TextView
+        android:id="@+id/costoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 50"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageB"
+        app:layout_constraintTop_toBottomOf="@id/frutaB" />
+
     <NumberPicker
         android:id="@+id/CantidadAlmuerzoB"
         android:layout_width="wrap_content"
@@ -228,6 +248,16 @@
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/imageC"
         app:layout_constraintTop_toBottomOf="@id/comidaC" />
+
+    <TextView
+        android:id="@+id/costoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 37"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageC"
+        app:layout_constraintTop_toBottomOf="@id/frutaC" />
 
     <NumberPicker
         android:id="@+id/CantidadAlmuerzoC"
@@ -295,6 +325,16 @@
         app:layout_constraintStart_toEndOf="@id/imageD"
         app:layout_constraintTop_toBottomOf="@id/comidaD" />
 
+    <TextView
+        android:id="@+id/costoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 25"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imageD"
+        app:layout_constraintTop_toBottomOf="@id/frutaD" />
+
     <NumberPicker
         android:id="@+id/CantidadAlmuerzoD"
         android:layout_width="wrap_content"
@@ -331,10 +371,10 @@
         android:id="@+id/ButonPedirDesayuno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="80dp"
-        android:text="Pedir"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/botonpedir"
+        android:text="Pedir"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -343,14 +383,42 @@
         android:id="@+id/botonantojo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:layout_marginStart="120dp"
-        android:text="Antojitos"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/botonantojito"
+        android:text="Antojitos"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/ButonMesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/botonpedir"
+        android:text="Mesas"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegresar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/botonloginsesion"
+        android:text="Regresar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

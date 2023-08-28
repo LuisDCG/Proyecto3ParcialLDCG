@@ -1,172 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2">
+    android:background="#00B2DE">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="20dp"
+        android:text="Menú de Antojos"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/menuTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="112dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginBottom="20dp"
-            android:text="Menú de Antojos"
-            android:textColor="#ffffff"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!-- Antojo 1: Postre de Duraznos -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="110dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/postreduraznos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTitle" />
 
-        <!-- Antojo 1: Postre de Duraznos -->
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="110dp"
-            android:layout_height="108dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/postreduraznos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/menuTitle" />
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Postre de Duraznos"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintEnd_toStartOf="@+id/txtAntojitoA"
+        app:layout_constraintTop_toTopOf="@+id/image1" />
 
-        <TextView
-            android:id="@+id/item1"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Postre de Duraznos"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image1"
-            app:layout_constraintEnd_toStartOf="@+id/txtAntojitoA"
-            app:layout_constraintTop_toTopOf="@+id/image1" />
+    <TextView
+        android:id="@+id/costoitem1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="$ 20"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image1"
+        app:layout_constraintTop_toBottomOf="@id/item1"
+        />
 
-        <NumberPicker
-            android:id="@+id/txtAntojitoA"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
-            android:textColor="@android:color/white"
-            app:layout_constraintStart_toEndOf="@+id/item1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/image1" />
+    <NumberPicker
+        android:id="@+id/txtAntojitoA"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/item1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image1" />
 
+    <!-- Antojo 2: Torta de Chocolate -->
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="110dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/tortachocolate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
 
-        <!-- Antojo 2: Torta de Chocolate -->
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="110dp"
-            android:layout_height="108dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/tortachocolate"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image1" />
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Torta de Chocolate"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        app:layout_constraintEnd_toStartOf="@+id/txtAntojitoB"
+        app:layout_constraintTop_toTopOf="@+id/image2" />
 
-        <TextView
-            android:id="@+id/item2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:text="Torta de Chocolate"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image2"
-            app:layout_constraintEnd_toStartOf="@+id/txtAntojitoB"
-            app:layout_constraintTop_toTopOf="@+id/image2" />
+    <TextView
+        android:id="@+id/costoitem2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="$ 36"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image2"
+        app:layout_constraintTop_toBottomOf="@id/item2"
+        />
 
-        <NumberPicker
-            android:id="@+id/txtAntojitoB"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/white"
-            app:layout_constraintStart_toEndOf="@+id/item2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/image2" />
+    <NumberPicker
+        android:id="@+id/txtAntojitoB"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/item2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image2" />
 
+    <!-- Antojo 3: Flan de Vainilla -->
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="110dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/flanvainilla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
 
-        <!-- Antojo 3: Flan de Vainilla -->
-        <ImageView
-            android:id="@+id/image3"
-            android:layout_width="110dp"
-            android:layout_height="108dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/flanvainilla"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image2" />
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Flan de Vainilla"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image3"
+        app:layout_constraintEnd_toStartOf="@+id/txtAntojitoC"
+        app:layout_constraintTop_toTopOf="@+id/image3" />
 
-        <TextView
-            android:id="@+id/item3"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:text="Flan de Vainilla"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/image3"
-            app:layout_constraintEnd_toStartOf="@+id/txtAntojitoC"
-            app:layout_constraintTop_toTopOf="@+id/image3" />
+    <TextView
+        android:id="@+id/costoitem3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="$ 22"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image3"
+        app:layout_constraintTop_toBottomOf="@id/item3"
+        />
 
-        <NumberPicker
-            android:id="@+id/txtAntojitoC"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@android:color/white"
-            app:layout_constraintStart_toEndOf="@+id/item3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/image3" />
+    <NumberPicker
+        android:id="@+id/txtAntojitoC"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/item3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image3" />
 
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Regresar"
+        android:backgroundTint="@color/botonloginsesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAntojitoC" />
 
-        <EditText
-            android:id="@+id/txtNumeroMesaAntojito"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Número de mesa"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image3" />
-
-        <Button
-            android:id="@+id/btnSolicitarAntojito"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Solicitar Antojito"
-            android:backgroundTint="@color/botonpedir"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNumeroMesaAntojito" />
-
-        <Button
-            android:id="@+id/btnRegresar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Regresar"
-            android:backgroundTint="@color/botonloginsesion"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSolicitarAntojito" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/imageBackground"
         android:layout_width="match_parent"
@@ -15,14 +14,11 @@
         android:src="@drawable/fondo0"
         tools:ignore="DuplicateIds" />
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#80000000"
         android:orientation="vertical">
-
 
         <ImageView
             android:id="@+id/logo"
@@ -32,7 +28,6 @@
             android:layout_marginTop="90dp"
             android:src="@drawable/logoiniciowhite"
              />
-
 
         <TextView
             android:layout_width="match_parent"
@@ -45,15 +40,23 @@
             android:layout_marginTop="60dp"
             />
 
-
         <Button
             android:id="@+id/btnMenuCliente"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/botonlogincliente"
             android:text="Cliente" />
+
+        <Button
+            android:id="@+id/btnCobrarCliente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/botonlogincliente"
+            android:text="Pagar" />
 
         <Button
             android:id="@+id/CambiarVistaMenuEmpleados"
@@ -63,7 +66,6 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/botonloginsesion"
             android:text="Iniciar Sesión" />
-
 
     </LinearLayout>
 
