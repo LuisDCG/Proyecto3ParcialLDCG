@@ -24,7 +24,7 @@
     <ListView
         android:id="@+id/listView_pedidosCocinero"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="540dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
@@ -32,5 +32,28 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCambiarContrasena2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cambiar Contraseña"
+        android:backgroundTint="@color/botoncambiarcontraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView_pedidosCocinero"/>
+
+    <Button
+        android:id="@+id/btnRegresar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Regresar"
+        android:backgroundTint="@color/botonesregresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCambiarContrasena2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,10 @@
     <color name="colorfondo">#FFBC00</color>
     <color name="botonpedir">#04EC58</color>
     <color name="botonantojito">#04CBEC</color>
-    <color name="botoncambiarcontraseña">#9A9A9A</color>
+    <color name="botoncambiarcontraseña">#4CAF50</color>
     <color name="botonlogincliente">#7997A8</color>
     <color name="botonloginsesion">#EAA400</color>
+    <color name="botonespagar">#009900</color>
+    <color name="botonesregresar">#555555</color>
+    <color name="botonesmesa">#0066CC</color>
 </resources>

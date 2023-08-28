@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:text="Regresar"
-        android:backgroundTint="@color/botonloginsesion"
+        android:backgroundTint="@color/botonesregresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/registroimg">
+
+    <TextView
+        android:id="@+id/title_old_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambio de Contraseña"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/old_password_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña actual"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/new_password_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/old_password_input"
+        android:hint="Nueva contraseña"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/change_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/new_password_input"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/botoncambiarcontraseña"
+        android:text="Cambiar" />
+
+
+</RelativeLayout>
