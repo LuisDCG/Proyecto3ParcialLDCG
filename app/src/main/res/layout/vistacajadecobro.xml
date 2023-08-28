@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorfondo">
+
+    <TextView
+        android:id="@+id/textView_Cajadecobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="44dp"
+        android:text="CAJA DE COBRO"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_min="40dp"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ListView
+        android:id="@+id/listView_totalesPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumeroMesaCajadeCobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Número de mesa"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listView_totalesPedidos"
+        app:layout_constraintVertical_bias="0.236"
+        tools:text="Número de mesa"/>
+
+    <TextView
+        android:id="@+id/textView_totalordenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="44dp"
+        android:text="Total: "
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_min="40dp"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNumeroMesaCajadeCobro"
+        />
+
+    <TextView
+        android:id="@+id/textView_totalordeneslistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="44dp"
+        android:text="Total: "
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_min="40dp"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNumeroMesaCajadeCobro"
+        />
+
+    <Button
+        android:id="@+id/BotonCajaBuscar"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Buscar  Mesa"
+        android:backgroundTint="@color/botonpedir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_totalordeneslistview"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/BotonCobrar"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:text="Cobrar"
+        android:backgroundTint="@color/botonpedir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BotonCajaBuscar"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/btnRegresarCajadecobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Regresar"
+        android:backgroundTint="@color/botonloginsesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonCobrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
