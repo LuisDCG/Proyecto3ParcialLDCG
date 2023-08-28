@@ -1,7 +1,10 @@
 package com.example.proyecto3parcialldcg;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +27,8 @@ public class CocineroActivity extends AppCompatActivity {
     private ListView listView;
     private ArrayList<String> listaPedidos;
 
+    private Button btnRegresar2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +46,30 @@ public class CocineroActivity extends AppCompatActivity {
             procesarPedidoCocinero(idPedido);
         });
 
+        Button butonRegistrar2 = findViewById(R.id.btnCambiarContrasena2);
+        butonRegistrar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CocineroActivity.this, CambiarContraActivity2.class);
+                intent.putExtra("nombreCocinero", nombreCocinero); // Envía el nombre del mesero a la otra actividad
+                startActivity(intent);
+            }
+        });
+
+        btnRegresar2 = findViewById(R.id.btnRegresar2);
+        btnRegresar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CocineroActivity.this, InicioActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
     private void cargarPedidosCocinero() {
-        String url = "http://192.168.131.89:8080/androidPHPSQL/obtenerPedidosCocinero.php";
+        String url = "http://192.168.1.109:8080/androidPHPSQL/obtenerPedidosCocinero.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
@@ -76,7 +100,7 @@ public class CocineroActivity extends AppCompatActivity {
     }
 
     private void procesarPedidoCocinero(int idPedido) {
-        String url = "http://192.168.131.89:8080/androidPHPSQL/procesarPedidoCocinero.php";
+        String url = "http://192.168.1.109:8080/androidPHPSQL/procesarPedidoCocinero.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> cargarPedidosCocinero(),
                 error -> { /* Manejar el error */ }) {

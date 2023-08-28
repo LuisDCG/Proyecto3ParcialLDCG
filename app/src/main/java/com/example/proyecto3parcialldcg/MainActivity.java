@@ -73,10 +73,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+        Button cambiarVistaCajadeCobro = findViewById(R.id.btnCobrarCliente);
+        cambiarVistaCajadeCobro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CajadecobroActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void clickBtnListener(View view){
-        String url = "http://192.168.131.89:8080/androidPHPSQL/insercion.php";
+        String url = "http://192.168.1.109:8080/androidPHPSQL/insercion.php";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         StringRequest resultadoPost = new StringRequest(Request.Method.POST, url,

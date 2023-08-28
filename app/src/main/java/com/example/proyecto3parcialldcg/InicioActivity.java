@@ -24,6 +24,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 public class InicioActivity extends AppCompatActivity {
+    private Button  btnRegresar2;
     EditText nameInput;
     EditText passwordInput;
     @Override
@@ -40,6 +41,15 @@ public class InicioActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         }); */
+
+        btnRegresar2 = findViewById(R.id.btnRegresarMesas);
+        btnRegresar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InicioActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         nameInput = findViewById(R.id.editTextText);
         passwordInput = findViewById(R.id.editTextTextPassword);
@@ -60,7 +70,7 @@ public class InicioActivity extends AppCompatActivity {
     }
     private void logearUsuario(String nombre, String contrasena) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.131.89:8080/androidPHPSQL/login_empleado.php";
+        String url = "http://192.168.1.109:8080/androidPHPSQL/login_empleado.php";
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 response -> {
