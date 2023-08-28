@@ -33,6 +33,8 @@
         <activity android:name=".CocineroActivity" />
         <activity android:name=".MeseroActivity" />
         <activity android:name=".CambiarContraActivity" />
+        <activity android:name=".CajadecobroActivity" />
+        <activity android:name=".MesasActivity" />
     </application>
 
 </manifest>
